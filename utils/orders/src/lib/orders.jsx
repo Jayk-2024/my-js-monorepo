@@ -1,11 +1,14 @@
-import styles from './orders.module.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
-export function Orders() {
+export const Orders = () => {
   return (
-    <div className={styles['container']} style={{ color: 'red'}} >
-      <h1>Welcome to Orders!</h1>
+    <div>
+      <h2>Orders Component</h2>
+      <p>This is the shared Orders component from the utils library.</p>
+
+      {/* Bootstrap Button */}
+      <button className="btn btn-primary">Bootstrap Button</button>
     </div>
   );
-}
-
-export default Orders;
+};
